@@ -1,0 +1,48 @@
+/*
+sombras : texto -caja
+modelo de caja : padding-margin-border
+
+*/
+
+h1{
+    background-color: black;
+    margin:20px 40px;
+   
+    padding:10px 20px 30px 40px;
+    /*padding-left:40px
+    padding-right:20px
+    */
+    /* padding - margin 
+    1 valor -> afecta a los 4 extremos
+       2 valores -> el primero afecta a arriba-abajo y el segundo a izquierda-derecha 
+       3 valores -> el primero afecta a arriba, el segundo a izquierda-derecha y el tercero a abajo
+       4 valores -> afecta a cada uno de los lados en el orden: arriba, derecha, abajo, izquierda(arranca arriba y va hacia en sentido horario) */
+    border: black dashed 2px;
+    border-color: red;
+    border-width:3px ;
+    border-style: double;/*
+    solid - dashed-dotted double*/
+    border-radius:20px ;
+    width: fit-content;/* ancho va a ser el de su contenido */
+    text-shadow:5px 5px 10px red,
+                -3px -3px 10px red;
+                /* 5px 3px pink ,
+                12px 8px 3px darkmagenta ; */
+    /*nos permite definir sombras 
+    1er valor desplazamiento horizontal, 
+    2do valor desplazamiento vertical, 
+    3er valor difuminado de sombra 
+    color
+    */
+    color: white;
+}
+h2{
+    width: 200px;
+    border: 2px solid black;
+    box-shadow:10px 10px 5px grey ;
+    /* igual que text-shadow
+    1valor - desplazamiento horizontal
+    2valor - desplazamiento vertical
+    3 valor - difuminado
+    4valor - color*/
+}

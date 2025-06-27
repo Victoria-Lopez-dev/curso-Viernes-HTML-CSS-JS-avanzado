@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+
+/* selectores -> manera de hacer referencia a una/s etiqueta/s del HTML para poder asignarle los estilos que queremos
+*/
+
+/* tipos de selectores -> clase(.nombreClase) - id(#nombreId) - etiqueta(etiqueta) -referencia a otras etiquetas (compuestos -> > , + ~) */
+
+/* 
+selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+}
+*/
+h1{
+  font-family: "Edu QLD Hand", cursive;
+  text-align: center;
+
+}
+h2{
+    background-color: blue;
+    width: 10vw;/*10% del ancho de la pantalla*/
+    font-size:2rem ;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.grupo1>h2{
+    color: white;
+    background-color: darkred;
+}
+
+#ancla1{
+    text-decoration: none;
+}
+.grupo1{
+    background-color: lightblue;
+    color: rgb(100,44,120);
+     width: 400px;
+    
+}
+#texto1{
+    background-color: #aa55ff;
+}
+
+img{
+    width: 50%;/*modificar su ancho
+    50% de 400px( en el caso de la imagen que se encuentra dentro del div)
+    50% del ancho del body (para la imagen que esta por fuera del div)
+    */
+}
+h3{
+    background-color: coral;
+    width: 80%;/* 80% de 400px*/
+}
+
+/* unidades :
+px - 500px 1400px
+% -> cuanto vale el valor del padre (100%) y saca de ahi el valor que le indcamos
+vw-vh (unidad relativa que toma como 100% el ancho o alto de la pantalla y de alli calcula un porcentaje
+
+em -> busca el tamaño tipografico del elemento padre y lo multiplica por el valor que coloquemos ,por defecto vale 16px
+ rem(root em) -> busca el tamaño tipografico definido en el elemento html y lo multiplica por el valor que coloquemos  ,por defecto vale 16px 
+*/
+
+/*
+proxima clase -> sombras texto y caja
+repaso de margin-padding-border
+*/

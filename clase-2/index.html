@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Clase -2</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        video {
+            width: 500px;
+            display: block;
+        
+        }
+        div{
+            padding: 20px;
+            border: 2px solid black;
+            width: 500px;
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+    <h1>Audio y Video </h1>
+    <audio src="./assets/Aves - Try So Hard.mp3" controls muted></audio>
+    <button onclick="mostrarAudio()">boton-audio</button>
+    <!-- <video src="./assets/videos/video2.mp4"></video> -->
+    <video  loop poster="./assets/bosque.jpg">
+        <source src="./assets/videos/video2.mp4" type="video/mp4">
+        <source src="./assets/videos/video2.ogv" type="video/ogv">
+    </video>
+    <div>
+        <button id="play">play</button>
+        <button id="pausa">pausa</button>  
+        <p>tiempo actual:<span id="actual"></span> 
+            - duracion:<span id="total"></span>
+        </p>      
+    </div>
+
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/khdH-heeojU?si=FVco0ckM1XT_cdmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <script src="./video-audio.js"></script>
+</body>
+</html>
+<!--
+atributos de audio/video
+controls: muestra los controles de reproducción
+
+autoplay: reproduce automáticamente al cargar la página
+loop: reproduce en bucle
+-->
