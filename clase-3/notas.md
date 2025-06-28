@@ -19,3 +19,12 @@ git commit -m "mensaje.."
 git branch -M main (opcional)
 git remote add origin ...
 git push -u origin main (master si no implementamos el comando branch -M main)
+
+
+## para clonar/copiar un repositorio remoto
+
+ git clone direccion-del-repositorio-remoto
+
+## para actualizar un repositorio clonado
+
+### Para la proxima clase: botonera de visual studio code 
