@@ -1,0 +1,75 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 40px;
+    color: white;
+    perspective: 3000px;
+    /*defino la perspectiva en el elemento padre para poder manipular el eje Z y la 3er dimension*/
+}
+.cubo{
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.uno{
+    transform: translateZ(-400px) translateX(300px);
+    transition-property: transform ;
+    transition-duration:3s ;
+    transition-timing-function:cubic-bezier(.94,0,0,.96);
+    /* transition: transform 1s, background-color 3s; */
+    /* translate(x,y) | translateX(x) | translateY(y) | translateZ()*/
+}
+.uno:hover{
+    background-color: darkgreen;
+}
+/* .uno:hover{
+    transform: translateZ(-200px) translateX(300px);
+    /* translate(x,y) | translateX(x) | translateY(y) | translateZ()*/
+
+.dos{
+    background-color: cadetblue;
+    transition:transform 4s;
+}
+.dos:hover{
+    transform: rotateX(180deg) rotateY(20deg) translatex(-100px);
+    /*rotateX(deg) rotateY(deg) rotateZ(deg) |rotate(deg) 
+    valores + derecha - izquierda*/
+}
+
+.tres{
+    background-color: goldenrod;
+
+}
+.scale{
+        transform: scale(2);
+    /* scale(x,y,z),scaleX(num) scaleY(num) scaleZ(num)*/
+}
+.cuatro{
+    background-color: darkblue;
+    transform: skew(20deg,-45deg);
+    /* skewX(x)| skewY(y) | skew(x,y) -> al igual que rotate,utiliza grados (deg)*/
+}
+/* transform -> transformamos - modificamos el elemento html
+por defecto -> 2D (ejes x e y)
+distintos tipos :
+translate -> trasladar al elemento 
+rotate -> rotar el elemento(grados -> deg = degree)
+scale -> escalar su tamaño (agrandar o achicar)
+skew -> deformar al elemento 
+
+*/
+/* transition -> un cambio de manera progresiva 
+transition-property
+transition-duration -> unidades s(segundos) ms(milisegundos)
+
+transition: property duration;
+
+transition-timing-function -> velocidad de la transision
+
+ease|ease-in|ease-out|ease-in-out |lineal| cubic-bezier()
+*/
+
+ 

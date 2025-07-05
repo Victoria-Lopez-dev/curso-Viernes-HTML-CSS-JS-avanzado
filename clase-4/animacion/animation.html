@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./animation.css">
+    <title>Clase 4</title>
+</head>
+<body onscroll="mostrar()">
+    <div class="zona-1 ">
+        <h1>Animation - Perspective</h1>
+    </div>
+
+    <div class="contenedor">
+        <div class="padre mover">
+            <div class="hijo">
+
+            </div>
+        </div>
+        <button onclick="parar()">STOP</button>
+    </div>
+
+    <section onclick="cambioColor(event)">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, repellendus corporis, numquam assumenda iure eum nam voluptas, beatae perferendis minima ex distinctio cum! Quaerat quo aperiam eum iusto fugiat est sequi repellat eveniet, corporis, voluptate tempore saepe, quas porro. Quos quam debitis magni exercitationem similique numquam pariatur perspiciatis. Magnam corrupti, quibusdam sed fugiat hic ad aperiam soluta dolorem quis rem id mollitia ex blanditiis est inventore culpa beatae molestiae esse corporis quos qui quidem optio. Repellat rem laborum esse et. Architecto sed cum unde dolorum soluta perferendis qui? Aut odio culpa sunt nisi eius numquam porro repellendus corporis itaque vitae!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, repellendus corporis, numquam assumenda iure eum nam voluptas, beatae perferendis minima ex distinctio cum! Quaerat quo aperiam eum iusto fugiat est sequi repellat eveniet, corporis, voluptate tempore saepe, quas porro. Quos quam debitis magni exercitationem similique numquam pariatur perspiciatis. Magnam corrupti, quibusdam sed fugiat hic ad aperiam soluta dolorem quis rem id mollitia ex blanditiis est inventore culpa beatae molestiae esse corporis quos qui quidem optio. Repellat rem laborum esse et. Architecto sed cum unde dolorum soluta perferendis qui? Aut odio culpa sunt nisi eius numquam porro repellendus corporis itaque vitae!</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, repellendus corporis, numquam assumenda iure eum nam voluptas, beatae perferendis minima ex distinctio cum! Quaerat quo aperiam eum iusto fugiat est sequi repellat eveniet, corporis, voluptate tempore saepe, quas porro. Quos quam debitis magni exercitationem similique numquam pariatur perspiciatis. Magnam corrupti, quibusdam sed fugiat hic ad aperiam soluta dolorem quis rem id mollitia ex blanditiis est inventore culpa beatae molestiae esse corporis quos qui quidem optio. Repellat rem laborum esse et. Architecto sed cum unde dolorum soluta perferendis qui? Aut odio culpa sunt nisi eius numquam porro repellendus corporis itaque vitae!</p>
+    </section>
+<script>
+    let cambioColor=(e)=>{
+        e.target.classList.add("section")
+    }
+    let parar=()=>{
+        let padre=document.querySelector(".mover");
+        padre.classList.remove("mover")
+    }
+
+    let mostrar=()=>{
+        console.log( window.scrollY)//px desplazados en sentido vertical
+       console.log(window.innerHeight) // alto de la pantalla del browser
+        let zona1=document.querySelector(".zona-1");
+
+        if(window.scrollY >window.innerHeight*0.2){
+            zona1.classList.add("color2")
+            
+        }else{
+            zona1.classList.remove("color2")
+           
+        }
+    }
+</script>
+</body>
+</html>
+<!-- window -> info sobre la ventana en la que estamos reproduciendo el sitio
+scrollY -> ofrece la cantidad de px que se scrolleo (en sentido vertical) 
+
+https://developer.mozilla.org/es/docs/Web/API/Window/scrollY
+
+-->

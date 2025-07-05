@@ -27,4 +27,6 @@ git push -u origin main (master si no implementamos el comando branch -M main)
 
 ## para actualizar un repositorio clonado
 
+git pull ( siempre parandonos dentro de la carpeta del repositorio clonado )
+
 ### Para la proxima clase: botonera de visual studio code 
