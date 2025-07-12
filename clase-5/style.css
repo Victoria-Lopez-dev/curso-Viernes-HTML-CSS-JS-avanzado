@@ -1,0 +1,48 @@
+svg{
+    border: 2px solid black;
+    width: 600px;
+    height: 400px;
+    display: block;
+}
+canvas{
+    border: 3px solid blue;
+    height: 300px;
+    background-color: rgb(144, 211, 238);
+}
+img{
+    width: 300px;
+}
+/* h2{
+    position: absolute;
+    top: 600px;
+    left: 300px;
+} */
+
+/* #circulo1,#circulo2{
+    animation:latir 4s alternate infinite ;
+} */
+
+rect:hover{
+    transform: rotate(45deg);
+    transition: transform 10s;
+}
+
+.mover{
+    animation: mover 4s ;
+}
+ @keyframes latir {
+    from{
+        r:50
+    }
+    to{
+        r:55
+    }
+ }
+ @keyframes mover {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(200px);
+    }
+ }

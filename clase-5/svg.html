@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Clase - 5</title>
+</head>
+<body>
+    <h1>Usando SVG</h1>
+    <img src="./images/profile.svg" alt="">
+    <svg><!-- 600x400-->
+        <rect x="100" y="200" width="300" height="250" fill="#ff55aa" stroke="rgb(100,40,22)" stroke-width="4" rx="10"></rect>
+        <circle cx="100" cy="200" r="80" fill="none" stroke="darkblue" stroke-width="4"></circle>
+        <ellipse cx="220" cy="100" rx="180" ry="30" fill="#339088"></ellipse>
+        <line x1="500" y1="390" x2="300" y2="290" stroke="black" stroke-width="5"></line>
+
+        <polyline points="0 0,233 100,300 50,330 100" fill="lightblue" stroke="orange" stroke-width="5" ></polyline>
+
+        <polygon points="340 50, 365 400,400 10, 450 58" stroke="darkviolet" stroke-width="3" fill="none"></polygon>
+    </svg>
+    <svg>
+        <circle id="circulo1" class="mover" cx="150" cy="200" r="50" fill="pink">
+        </circle>
+        <circle id="circulo2"  class="mover"cx="230" cy="200" r="50" fill="pink"></circle>
+        <polygon  class="mover" points="109 230,190 300, 270 230" fill="pink"></polygon>
+    </svg>
+    <h2>Texto...</h2>
+</body>
+</html>
+<!-- 
+formas primitivas-> figuras geometricas
+
+- circulos
+- elipses
+- rectangulos
+- rectas
+- recta
+- poligonos 
+-->
+<!-- atributos de las formas primitivas de SVG
+    fill -> color de relleno
+    stroke -> color del contorno
+    stroke-width -> ancho del borde
+    rx -> redondeo de bordes (rectangulos)
+    x|y-> coordenadas
+    cx|cy -> centro de la circunferencia (coordenada)
+    r -> radio 
+    rx|ry -> radios de la ellipse  
+    x1|y1|x2|y2 -> coordenadas de las lineas
+
+    points ->multiples pares de coordenadas
+
+    width y height 
+-->
