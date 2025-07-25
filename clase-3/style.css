@@ -8,6 +8,7 @@ section{
     background-color: pink;
     height: 40vh;
     margin-bottom: 20px;
+    font-style: italic;
 }
 
 /* flexbox */
