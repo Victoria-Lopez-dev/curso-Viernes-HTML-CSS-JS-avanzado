@@ -115,6 +115,13 @@ img{
     padding: 10px;
     color: black;
 }
+#boton-borrar{
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333333;
+    color: white;
+    border-radius: 10px;
+}
 /*--------------tema noche --------------- */
 
 .fondo{

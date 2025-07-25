@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imagenes/logo.svg" type="image/svg+xml">
     <title>localStorage-sessionStorage</title>
 </head>
-<body >
+<body onload="carga()">
     
     <header>
         <img class="logo" src="./imagenes/logo.svg" alt="logo" >
 
         <a  class="link-hoja2" href="./hojaSecundaria.html">Ir a la siguiente hoja >>></a>
-        <nav>
+        <div>
             <button class="tema-boton" onclick="desplegar()">Tema</button>
             <ul>
-                <li><button id="day" class="boton "  onclick="temaDia()">Day</button></li>
-                <li><button id="night" class="boton " onclick="temaNoche()" >Night</button></li>
+                <li><button id="day" class="boton" onclick="temaDia()">Day</button></li>
+                <li><button id="night" class="boton" onclick="temaNoche()">Night</button></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -30,33 +31,33 @@
         </div>
         <section>
             <div class="card">
-                <h3>Silla Living</h3>
+                <h3>Silla 1</h3>
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
                 <p>$<span>2500</span></p>
-                <button class="boton-compra" onclick="sumarProducto()" >comprar</button>
+                <button id="boton1" class="boton-compra" onclick="sumarCanasto(this)">comprar</button>
                 
             </div>
 
             <div class="card">
-                <h3>Silla Living</h3>
+                <h3>Silla 2</h3>
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
-                <p>$<span>2500</span></p>
-                <button class="boton-compra" onclick="sumarProducto()" >comprar</button>
+                <p>$<span>3500</span></p>
+                <button id="boton2" class="boton-compra" onclick="sumarCanasto(this)">comprar</button>
             
             </div>   
             <div class="card">
-                <h3>Silla Living</h3>
+                <h3>Silla 3</h3>
                 <img src="./imagenes/silla.jpg" alt="silla">
                 <p>Una hermosa silla para su casa,donde poder relajarse</p>
-                <p>$<span>2500</span></p>
-                <button class="boton-compra" onclick="sumarProducto()" >comprar</button>
+                <p>$<span>4500</span></p>
+                <button id="boton3" class="boton-compra" onclick="sumarCanasto(this)">comprar</button>
             
             </div>        
         </section>
 
-        <button onclick="borrarCompra()">Borrar compra</button>
+        <button id="boton-borrar" >Borrar compra</button>
         
     </main>
 
